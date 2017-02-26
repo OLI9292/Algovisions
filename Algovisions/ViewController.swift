@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     
     var steps = [Step]()
     
-    let LINE_DISTANCE: Double = 100
+    let LINE_DISTANCE: Double = 120
     let CIRCLE_RADIUS: Double = 15
     
     var distFromOrigin: Double {
@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tree = BinarySearchTree(array: [5,10,3,8,14,9])
+        tree = BinarySearchTree(array: [10,8,14,3,9,1,7,29,21,11])
         
         guard let stepsCount = tree?.steps.count else { return }
         for i in 0..<stepsCount {

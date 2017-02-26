@@ -27,6 +27,8 @@ struct Step {
     }
     
     var successColor: UIColor {
-        return succesful ? .green : .red
+        return succesful ?
+            UIColor(red: 0.02, green: 0.48, blue: 0.12, alpha: 1.0) :
+            UIColor(red: 0.71, green: 0.07, blue: 0.07, alpha: 1.0)
     }
 }
